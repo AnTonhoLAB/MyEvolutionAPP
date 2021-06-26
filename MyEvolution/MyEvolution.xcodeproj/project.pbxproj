@@ -16,6 +16,9 @@
 		3F2822312687D91900BE0335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F28222F2687D91900BE0335 /* LaunchScreen.storyboard */; };
 		3F28223C2687D91900BE0335 /* MyEvolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28223B2687D91900BE0335 /* MyEvolutionTests.swift */; };
 		3F2822472687D91900BE0335 /* MyEvolutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2822462687D91900BE0335 /* MyEvolutionUITests.swift */; };
+		3F28225B2687DC1500BE0335 /* EvolutionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28225A2687DC1500BE0335 /* EvolutionListViewController.swift */; };
+		3F28225D2687DC4100BE0335 /* EvolutionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28225C2687DC4100BE0335 /* EvolutionDetailViewController.swift */; };
+		3F28225F2687DC6000BE0335 /* NewEvolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28225E2687DC6000BE0335 /* NewEvolutionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3F2822422687D91900BE0335 /* MyEvolutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyEvolutionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2822462687D91900BE0335 /* MyEvolutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEvolutionUITests.swift; sourceTree = "<group>"; };
 		3F2822482687D91900BE0335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F28225A2687DC1500BE0335 /* EvolutionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionListViewController.swift; sourceTree = "<group>"; };
+		3F28225C2687DC4100BE0335 /* EvolutionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionDetailViewController.swift; sourceTree = "<group>"; };
+		3F28225E2687DC6000BE0335 /* NewEvolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEvolutionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,10 @@
 		3F2822202687D91700BE0335 /* MyEvolution */ = {
 			isa = PBXGroup;
 			children = (
-				3F2822212687D91700BE0335 /* AppDelegate.swift */,
-				3F2822232687D91700BE0335 /* SceneDelegate.swift */,
-				3F2822252687D91700BE0335 /* ViewController.swift */,
-				3F2822272687D91700BE0335 /* Main.storyboard */,
-				3F28222D2687D91900BE0335 /* Assets.xcassets */,
-				3F28222F2687D91900BE0335 /* LaunchScreen.storyboard */,
-				3F2822322687D91900BE0335 /* Info.plist */,
-				3F28222A2687D91700BE0335 /* MyEvolution.xcdatamodeld */,
+				3F2822612687DD5200BE0335 /* Persistence */,
+				3F2822602687DC7900BE0335 /* Coredata */,
+				3F2822552687DA9200BE0335 /* Essentials */,
+				3F2822542687DA7C00BE0335 /* App */,
 			);
 			path = MyEvolution;
 			sourceTree = "<group>";
@@ -129,6 +131,69 @@
 				3F2822482687D91900BE0335 /* Info.plist */,
 			);
 			path = MyEvolutionUITests;
+			sourceTree = "<group>";
+		};
+		3F2822542687DA7C00BE0335 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F2822562687DB7F00BE0335 /* EvolutionList */,
+				3F2822572687DB9600BE0335 /* EvolutionDetail */,
+				3F2822592687DBAD00BE0335 /* NewEvolution */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F2822552687DA9200BE0335 /* Essentials */ = {
+			isa = PBXGroup;
+			children = (
+				3F28222D2687D91900BE0335 /* Assets.xcassets */,
+				3F2822322687D91900BE0335 /* Info.plist */,
+				3F28222F2687D91900BE0335 /* LaunchScreen.storyboard */,
+				3F2822232687D91700BE0335 /* SceneDelegate.swift */,
+				3F2822212687D91700BE0335 /* AppDelegate.swift */,
+			);
+			path = Essentials;
+			sourceTree = "<group>";
+		};
+		3F2822562687DB7F00BE0335 /* EvolutionList */ = {
+			isa = PBXGroup;
+			children = (
+				3F2822252687D91700BE0335 /* ViewController.swift */,
+				3F2822272687D91700BE0335 /* Main.storyboard */,
+				3F28225A2687DC1500BE0335 /* EvolutionListViewController.swift */,
+			);
+			path = EvolutionList;
+			sourceTree = "<group>";
+		};
+		3F2822572687DB9600BE0335 /* EvolutionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3F28225C2687DC4100BE0335 /* EvolutionDetailViewController.swift */,
+			);
+			path = EvolutionDetail;
+			sourceTree = "<group>";
+		};
+		3F2822592687DBAD00BE0335 /* NewEvolution */ = {
+			isa = PBXGroup;
+			children = (
+				3F28225E2687DC6000BE0335 /* NewEvolutionViewController.swift */,
+			);
+			path = NewEvolution;
+			sourceTree = "<group>";
+		};
+		3F2822602687DC7900BE0335 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		3F2822612687DD5200BE0335 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				3F28222A2687D91700BE0335 /* MyEvolution.xcdatamodeld */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +327,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2822262687D91700BE0335 /* ViewController.swift in Sources */,
+				3F28225D2687DC4100BE0335 /* EvolutionDetailViewController.swift in Sources */,
 				3F2822222687D91700BE0335 /* AppDelegate.swift in Sources */,
+				3F28225F2687DC6000BE0335 /* NewEvolutionViewController.swift in Sources */,
 				3F2822242687D91700BE0335 /* SceneDelegate.swift in Sources */,
+				3F28225B2687DC1500BE0335 /* EvolutionListViewController.swift in Sources */,
 				3F28222C2687D91700BE0335 /* MyEvolution.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
-				INFOPLIST_FILE = MyEvolution/Info.plist;
+				INFOPLIST_FILE = MyEvolution/Essentials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +529,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
-				INFOPLIST_FILE = MyEvolution/Info.plist;
+				INFOPLIST_FILE = MyEvolution/Essentials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
